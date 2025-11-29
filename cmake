@@ -18,3 +18,23 @@ cmake . -B build \
 
 cd build
 make -j4
+##################################################################
+
+
+
+sudo apt update
+sudo apt install -y \
+  libsdl2-dev \
+  libsdl2-image-dev \
+  libsdl2-mixer-dev \
+  libsdl2-ttf-dev \
+  libx11-dev \
+  libxext-dev \
+  libxrandr-dev \
+  libxrender-dev \
+  libxi-dev \
+  libxfixes-dev \
+  libxcursor-dev \
+  libxinerama-dev \
+  libxkbcommon-dev \
+  libwayland-dev
