@@ -38,3 +38,14 @@ sudo apt install -y \
   libxinerama-dev \
   libxkbcommon-dev \
   libwayland-dev
+
+  ############################################################
+
+
+rm -rf build
+mkdir build
+cd build
+
+cmake .. \
+-DCMAKE_C_FLAGS="-O3 -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard -ffast-math -fomit-frame-pointer -Wno-implicit-function-declaration" \
+-DCMAKE_CXX_FLAGS="-O3 -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard -ffast-math -fomit-frame-pointer -Wno-implicit-function-declaration"
